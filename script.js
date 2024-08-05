@@ -21,7 +21,7 @@ function startRecording() {
       }
     };
     mediaRecorder.onstop = () => {
-      audioBlob = new Blob(audioChunks, { type: "audio/mp3" });
+      audioBlob = new Blob(audioChunks, { type: "audio/wav" });
       audioPlayer.src = URL.createObjectURL(audioBlob);
       downloadBtn.disabled = false;
     };
