@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Voice Recorder with Encryption</title>
+  </head>
+
+  <body>
+    <div class="app-container">
+      <h1>Voice Recorder with Encryption</h1>
+
+      <button id="startBtn">Start Recording</button>
+      <button id="stopBtn" disabled>Stop Recording</button>
+      <button id="downloadBtn" disabled>Download</button>
+
+      <select id="encryptionMethod">
+        <option value="none">None</option>
+        <option value="rsa">RSA</option>
+        <option value="aes">AES</option>
+      </select>
+
+      <audio id="audioPlayer" controls></audio>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
